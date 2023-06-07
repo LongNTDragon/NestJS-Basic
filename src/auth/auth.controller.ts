@@ -8,8 +8,8 @@ export class AuthController {
 
     }
 
-    @Get("/register")
+    @Post("/register")
     register() {
-        return 'hello user';
+        return this.authService.register();
     }
 }
